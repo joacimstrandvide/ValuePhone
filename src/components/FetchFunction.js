@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
+/* styled components */
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+/* reactjs popups */
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
 // Icons npm packet
-import { IoPhonePortraitOutline } from "react-icons/io5";
-import { BsCashCoin } from "react-icons/bs";
-
+import { IoPhonePortraitOutline } from 'react-icons/io5'
+import { BsCashCoin } from 'react-icons/bs'
 
 function FetchFunction() {
     // useState
@@ -22,18 +25,13 @@ function FetchFunction() {
             .then((data) => setData(data))
     }, [])
 
-    // Enkel alert när man trycker på Köp nu knappen
-    function buyClick() {
-        alert('Produkten har lagts i kundvagnen')
-    }
-
     return (
         <>
-        {/* Använder .map för att ta fram alla föremål */}
+            {/* Använder .map för att ta fram alla föremål */}
             <Container>
                 {data.map((item) => (
                     <Main className="main" key={item.id}>
-                        <img src={item.img} alt="Company" />
+                        <img src={item.img} alt="Phone" />
                         <h3>{item.name}</h3>
                         <h4>
                             <IoPhonePortraitOutline />
@@ -44,10 +42,34 @@ function FetchFunction() {
                             {item.price}
                         </h4>
                         {/* Ternary operator */}
-                        {item.amount > 10 ? <h4>I lager</h4> : <h4>Nästan slut</h4>}
+                        {item.amount > 10 ? (
+                            <h4>I lager</h4>
+                        ) : (
+                            <h4>Nästan slut</h4>
+                        )}
                         {/* useParams */}
-                        <Link to={`/specific/${item.id}`}>Mer Info</Link>
-                        <Button onClick={buyClick}>Köp Nu</Button>
+                        <Link id="more" to={`/specific/${item.name}`}>
+                            Mer Info
+                        </Link>
+                        {/* Popups npm packet för bättre popups */}
+                        <Popup
+                            trigger={<button id='open'>Köp Nu</button>}
+                            modal
+                            nested
+                        >
+                            {(close) => (
+                                <div className="modal">
+                                    <div className="content">
+                                        {item.name} har lagts i kundvagnen
+                                    </div>
+                                    <div>
+                                        <button id='close' onClick={() => close()}>
+                                            Stäng
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </Popup>
                     </Main>
                 ))}
             </Container>
@@ -59,7 +81,7 @@ export default FetchFunction
 
 // Css styling
 const Container = styled.div`
-    background-color: grey;
+    background-color: #fff;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
@@ -72,17 +94,5 @@ const Container = styled.div`
 const Main = styled.div`
     margin: 2rem auto auto auto;
     padding: 1rem;
-    color: #fff;
-`
-
-const Button = styled.button`
-    padding: .5rem;
-    background-color: #fff;
-    border: 2px solid #000;
-    transition: 0.4s ease-in-out;
-    &:hover {
-        border: 2px solid #118C4F;
-        border-radius: 10px;
-        color: #118C4F;
-    }
+    color: #000;
 `

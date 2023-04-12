@@ -1,4 +1,6 @@
+/* Import google font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* Basic body settings */
 body {
     margin: 0;
     padding: 0;
@@ -6,10 +8,12 @@ body {
     overflow-x: hidden;
 }
 
+/* Main app */
 .App {
     text-align: center;
 }
 
+/* Give all images certain height */
 .main img {
     height: 22rem;
     transition: 1s;
@@ -19,10 +23,60 @@ body {
     transform: scale(1.1);
 }
 
+/* More info button */
+#more {
+    padding: 0.4rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.4s ease-in-out;
+}
+
+#more:hover {
+    border: 2px solid #00308f;
+    border-radius: 10px;
+    color: #00308f;
+}
+
+
+.content {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#open {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.4s ease-in-out;
+}
+
+#open:hover {
+    border: 2px solid #118c4f;
+    border-radius: 10px;
+    color: #118c4f;
+}
+
+#close {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.4s ease-in-out;
+}
+
+#close:hover {
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
 .main h4 {
     font-size: 1rem;
 }
 
+/* Navbar menu */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -34,6 +88,7 @@ li {
     margin: 1rem;
 }
 
+/* All links */
 a {
     color: #fff;
     text-decoration: none;

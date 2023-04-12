@@ -11,17 +11,13 @@ function Specific() {
 
     return (
         <>
-        <HeaderPart />
+            <HeaderPart />
             <div>
                 <h1>{SomeValue} till Produktsidan</h1>
-                <h4>
-                    Här kan du läsa om följande produkt <br />
-                    <span>
-                        <h3>Produkt ID:  {id}</h3>
-                    </span>
-                </h4>
+                <h3>Här kan du läsa mer om en specifik produkt</h3>
+                <h3>Läs mer om: {id}</h3>
             </div>
-        <FooterPart />
+            <FooterPart />
         </>
     )
 }

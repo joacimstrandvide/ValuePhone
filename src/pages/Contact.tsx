@@ -15,6 +15,7 @@ function Contact(props: BasicProps) {
             <HeaderPart />
             <Read>
                 <h2>Contact Us</h2>
+                <p>We here at ValuePhone apprecitiate your feedback and questions.</p>
                 <p>
                     Please contact us with any questions at the following places.
                 </p>
