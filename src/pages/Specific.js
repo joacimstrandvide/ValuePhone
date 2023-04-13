@@ -14,8 +14,8 @@ function Specific() {
             <HeaderPart />
             <div>
                 <h1>{SomeValue} till Produktsidan</h1>
-                <h3>Här kan du läsa mer om en specifik produkt</h3>
-                <h3>Läs mer om: {id}</h3>
+                <h3>Här kan du läsa mer om en specifik produkt</h3><br />
+                <h3>Vald Produkt: {id}</h3>
             </div>
             <FooterPart />
         </>

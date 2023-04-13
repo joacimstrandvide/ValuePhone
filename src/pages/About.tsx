@@ -14,7 +14,7 @@ function About() {
         <>
             <HeaderPart />
             <Read>
-                <h2>About us</h2>
+                <h2>Om Oss</h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Veritatis sequi reiciendis architecto sapiente rerum veniam

@@ -6,7 +6,7 @@ import FooterPart from '../components/FooterPart'
 //Props from App.js
 interface BasicProps {
     mail: string
-    number: number
+    number: string
 }
 
 function Contact(props: BasicProps) {
@@ -14,11 +14,12 @@ function Contact(props: BasicProps) {
         <>
             <HeaderPart />
             <Read>
-                <h2>Contact Us</h2>
-                <p>We here at ValuePhone apprecitiate your feedback and questions.</p>
+                <h2>Kontakta Oss</h2>
+                <p>Vi här på ValuePhone uppskattar din feedback.</p>
                 <p>
-                    Please contact us with any questions at the following places.
+                    Vänligen kontakta oss med frågor genom mail eller telefonnummer.
                 </p>
+                {/* Här används propsen */}
                 <h4>{ props.mail }</h4>
                 <h4>+{ props.number }</h4>
             </Read>
