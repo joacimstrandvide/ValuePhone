@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name": "Iphone 13",
+        "brand": "Apple",
+        "price": "9690kr",
+        "img": "./img/Iphone13.png",
+        "amount": 15
+    },
+    {
+        "id":2,
+        "name": "Iphone XR",
+        "brand": "Apple",
+        "price": "5500kr",
+        "img": "./img/IphoneXR.png",
+        "amount": 12
+    },
+    {
+        "id":3,
+        "name": "Iphone 12",
+        "brand": "Apple",
+        "price": "8596kr",
+        "img": "./img/Iphone12.png",
+        "amount": 20
+    },
+    {
+        "id":4,
+        "name": "Google Pixel 4",
+        "brand": "Google",
+        "price": "3000kr",
+        "img": "./img/Pixel4.png",
+        "amount": 8
+    },
+    {
+        "id":5,
+        "name": "Google Pixel 5",
+        "brand": "Google",
+        "price": "3900kr",
+        "img": "./img/Pixel5.png",
+        "amount": 5
+    },
+    {
+        "id":6,
+        "name": "Samsung Galaxy S20 Ultra",
+        "brand": "Samsung",
+        "price": "8000kr",
+        "img": "./img/Samsungs20.png",
+        "amount": 17
+    }
+]
