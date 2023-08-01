@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom'
-
 // Error hantering för om en länk inte finns
 export default function NotFound() {
     return (
