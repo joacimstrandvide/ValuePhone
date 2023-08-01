@@ -8,9 +8,6 @@ export default function NotFound() {
             <p>
                 The page you requested does not exist or has been moved.
             </p>
-            <p>
-                Go to the <NavLink to="/">Homepage</NavLink>.
-            </p>
         </div>
     )
 }

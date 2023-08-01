@@ -31,7 +31,7 @@ function FetchFunction() {
             <Container>
                 {data.map((item) => (
                     <Main className="main" key={item.id}>
-                        <img src={item.img} alt="Phone" />
+                        <img src={process.env.PUBLIC_URL + item.img} alt="Phone" />
                         <h3>{item.name}</h3>
                         <h4>
                             <IoPhonePortraitOutline />

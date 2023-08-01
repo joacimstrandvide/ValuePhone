@@ -1,6 +1,6 @@
 {
-  "homepage": "http://joacimstrandvide.github.io/ValuePhone",
   "name": "joacimlabb",
+  "homepage": "ValuePhone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
