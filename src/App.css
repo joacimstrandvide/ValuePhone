@@ -1,10 +1,11 @@
 /* Import google font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 /* Basic body settings */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
 }
 
@@ -47,6 +48,7 @@ body {
 
 #open {
     padding: 0.5rem;
+    font-family: 'Nunito', sans-serif;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
@@ -61,6 +63,7 @@ body {
 
 #close {
     padding: 0.5rem;
+    font-family: 'Nunito', sans-serif;
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
@@ -74,6 +77,11 @@ body {
 
 .main h4 {
     font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.main h2 {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Navbar menu */
@@ -91,6 +99,7 @@ li {
 /* All links */
 a {
     color: #fff;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     margin-right: 1rem;
     padding: 5px;

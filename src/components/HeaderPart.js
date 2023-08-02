@@ -18,6 +18,7 @@ export default HeaderPart
 // Css styling
 const Header = styled.div`
     background-color: #000;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 2rem;
     color: white;

@@ -5,11 +5,6 @@ import FooterPart from '../components/FooterPart'
 
 function About() {
 
-    // Enkel alert när man trycker på mer information knappen
-    function readMore() {
-        alert('Om du vill veta mer vänligen kontakta oss')
-    }
-
     return (
         <>
             <HeaderPart />
@@ -26,7 +21,6 @@ function About() {
                     maxime, rerum impedit dicta consequuntur alias, sit voluptas
                     sequi similique. Cumque, doloremque amet?
                 </p>
-                <button onClick={readMore}>Mer information</button>
             </Read>
             <FooterPart />
         </>
