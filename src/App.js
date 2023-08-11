@@ -26,18 +26,51 @@ function App() {
                         </li>
                     </ul>
                 </nav>
+                <div className="container-menu">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        className="menu-toggle"
+                    />
+                    <label htmlFor="menu-toggle" className="menu-button">
+                        <div className="bar"></div>
+                        <div className="bar"></div>
+                        <div className="bar"></div>
+                    </label>
+                    <nav className="navbar">
+                        <ul>
+                            <li>
+                                <Link to={'/'}>Hem</Link>
+                            </li>
+                            <li>
+                                <Link to={'/about'}>Om</Link>
+                            </li>
+                            <li>
+                                <Link to={'/contact'}>Kontakt</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 {/* useContext */}
-                <UserInfo.Provider value={"Välkommen gäst"}>
-                <Routes>
-                    {/*Router Paths */}
-                    <Route path="/" element={<Home />}/>
-                    <Route path="/about" element={<About />} />
-                    <Route path="/specific/:id" element={<Specific />} />
-                    {/*Sending 2 props in this one to the page */}
-                    <Route path="/contact" element={ <Contact mail={"mail@mail.se"} number={"460 555 55 55"} />} />
-                    {/* Error handling */}
-                    <Route path="*" element={<Error />} />
-                </Routes>
+                <UserInfo.Provider value={'Välkommen gäst'}>
+                    <Routes>
+                        {/*Router Paths */}
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/specific/:id" element={<Specific />} />
+                        {/*Sending 2 props in this one to the page */}
+                        <Route
+                            path="/contact"
+                            element={
+                                <Contact
+                                    mail={'mail@mail.se'}
+                                    number={'460 555 55 55'}
+                                />
+                            }
+                        />
+                        {/* Error handling */}
+                        <Route path="*" element={<Error />} />
+                    </Routes>
                 </UserInfo.Provider>
             </div>
         </>
