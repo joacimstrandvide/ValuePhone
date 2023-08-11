@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ValuePhone/static/css/main.d1010468.css",
-    "main.js": "/ValuePhone/static/js/main.0adfb517.js",
+    "main.css": "/ValuePhone/static/css/main.b41615e5.css",
+    "main.js": "/ValuePhone/static/js/main.ca0df9cb.js",
     "index.html": "/ValuePhone/index.html",
-    "main.d1010468.css.map": "/ValuePhone/static/css/main.d1010468.css.map",
-    "main.0adfb517.js.map": "/ValuePhone/static/js/main.0adfb517.js.map"
+    "main.b41615e5.css.map": "/ValuePhone/static/css/main.b41615e5.css.map",
+    "main.ca0df9cb.js.map": "/ValuePhone/static/js/main.ca0df9cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1010468.css",
-    "static/js/main.0adfb517.js"
+    "static/css/main.b41615e5.css",
+    "static/js/main.ca0df9cb.js"
   ]
 }
